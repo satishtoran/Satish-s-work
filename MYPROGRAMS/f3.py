@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 106,
+   "execution_count": 13,
    "metadata": {},
    "outputs": [
     {
@@ -13,23 +13,41 @@
       "Satish\n",
       "Alok\n",
       "Program\n",
-      "Add a new name:Golu\n",
-      "('Satish', 'Alok', 'Program') Golu\n",
-      "(('Satish', 'Alok', 'Program'), 'Golu')\n"
+      "Golu\n",
+      "Molu\n",
+      "Tolu\n",
+      "Polu\n",
+      "Bholu\n",
+      "Putolu\n",
+      "!END\n",
+      "((((((('Satish', 'Alok', 'Program'), 'Golu'), 'Molu'), 'Tolu'), 'Polu'), 'Bholu'), 'Putolu')\n"
      ]
     }
    ],
    "source": [
     "data2 = ('Satish','Alok','Program')\n",
     "print(len(data2))\n",
+    "\n",
     "for x in range (len(data2)):\n",
     "    print (data2[x])\n",
-    "p = input ('Add a new name:' )\n",
-    "print (data2,p)\n",
     "\n",
-    "data2 = data2, p\n",
+    "p='START'    \n",
+    "while p != '!END' : #True\n",
+    "    p=input()\n",
+    "    if p != '!END': #Ture\n",
+    "        data2 = data2,p\n",
+    "    else:\n",
+    "        break\n",
+    "    \n",
     "print (data2)"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
